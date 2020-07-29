@@ -83,24 +83,139 @@ textarea {
   resize: vertical;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+                        /* utility classes */
+                        /*=================*/
+
+a {
+  text-decoration: none;
+}  
+   
+.buttonSubscribe {
+  background-color: indigo;
+  border: 2px solid indigo;
+  border-radius: 50px;
+  height: 5px;
+  font-size: 1.7em;
+  color: white;
+  padding: 0.8em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.button {
+  background-color: indigo;
+  border: 2px solid indigo;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 1.7em;
+  color: white;
+}
+
+
+
+.image {
+  width: 80%;
+}
+
+.imageLink {
+  width: 60%;
+}
+
+.logoLink {
+  width: 100%;
+}
+
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
 
 body {
   background-image: url(https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png);
 }
 
+                        /* header */
+header {  
+  height: 10vh;
+  position: relative;
+  border-bottom: 2px solid gray;
+}
 
+.burger {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
 
+.titleLogo {
+  padding-top: 0.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.titleLogo img {
+  width: 80%;
+}
 
+.subscribe h2 {
+  font-size: 3em;
+}
 
+.subscribe p {
+  font-size: 1.7em;
+}
 
+main .subscribe {
+  padding-bottom: 6em;
+}
 
+.chiffre {
+  background-color: darkblue;
+  color: white;
+}
 
+.chiffre h3 {
+  font-size: 3em;
+  font-weight: bold;
+}
 
+.chiffre span {
+  font-size: 2em;
+  font-weight: bold;
+}
 
+.matching h3 {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+article {
+  width: 100%;
+}
 
 
 
