@@ -99,43 +99,67 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-                        /* utility classes */
-                        /*=================*/
-
 a {
-  text-decoration: none;
-}  
-   
+text-decoration: none;
+}
+        
+body {
+  background-image: url(https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png);
+}
+/* //////////////////////// */
+
+/* font fo website */
+@font-face {
+  font-family: "Gotham";
+    src:url("Gotham\ Black\ Regular.ttf");      
+}
+
+@font-face {
+  font-family: "mulish";
+    src:url("Mulish-VariableFont_wght.ttf");      
+}
+/* ================================================ */
+ /* utility classes */
+/*=================*/
+
 .buttonSubscribe {
-  background-color: indigo;
-  border: 2px solid indigo;
-  border-radius: 50px;
+  background-color: #4d22ff;
+  border-radius: 24px;
+  border: none;
   height: 5px;
   font-size: 1.7em;
   color: white;
-  padding: 0.8em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding: 5px 25px;
 }
 
 .button {
-  background-color: indigo;
-  border: 2px solid indigo;
-  border-radius: 10px;
-  height: 20px;
-  font-size: 1.7em;
+  background-color: #4d22ff;
+  border-radius: 24px;
+  border: none;
+  font-size: 20px;
   color: white;
+  padding: 5px 25px;
 }
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
+.backgroundLightpink {
+  background-color: #d8dcff;
+}
+
+.backgroundLightgray {
+  background-color: #e5e6e4;
+}
 
 .image {
-  width: 80%;
+  width: 250px;
 }
 
 .imageLink {
-  width: 60%;
+  width: 200px;
 }
 
 .logoLink {
@@ -153,12 +177,54 @@ a {
   align-items: center;
 }
 
-body {
-  background-image: url(https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png);
+.fontTitleHeader {
+  font-size: 46px;
+  
 }
 
-                        /* header */
-header {  
+.fontTextHeader {
+  color: #212121;
+  font-size: 26px;
+}
+
+.fontMulish {
+  font-family: "mulish", Arial, Helvetica, sans-serif;
+}
+
+.fontGotham {
+  font-family: "gotham", Arial, Helvetica, sans-serif;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.fontSize18 {
+  font-size: 18px;
+}
+
+.fontSize36 {
+  font-size: 36px;
+}
+
+.fontSize26 {
+  font-size: 26px;
+}
+
+.blueText {
+  color: #162049;
+}
+/* ////////////////////////////////////////// */
+
+
+
+
+/* =============================================================== */
+
+
+                        /* nav */
+                        /* === */
+nav {  
   height: 10vh;
   position: relative;
   border-bottom: 2px solid gray;
@@ -181,6 +247,8 @@ header {
   width: 80%;
 }
 
+                        /* header */
+                        /* ====== */
 .subscribe h2 {
   font-size: 3em;
 }
@@ -189,56 +257,100 @@ header {
   font-size: 1.7em;
 }
 
-main .subscribe {
+header .subscribe {
   padding-bottom: 6em;
 }
 
+                        /* main */
+                        /* ==== */
+
+/* bloc chiffre with number and blue background                         */
 .chiffre {
-  background-color: darkblue;
+  background-color: #2b345d;
   color: white;
 }
 
-.chiffre h3 {
-  font-size: 3em;
-  font-weight: bold;
+.chiffreTitle {
+  font-family: "gotham", Arial, Helvetica, sans-serif;
+  font-size: 36px;
 }
 
-.chiffre span {
-  font-size: 2em;
-  font-weight: bold;
+.chiffreSubtitle {
+  font-family: "gotham", Arial, Helvetica, sans-serif;
+  color: #2fd;
+  font-size: 20px;
 }
 
-.matching h3 {
-  font-size: 1.9em;
-  font-weight: bold;
+.blueBloc {
+  padding: 40px 20px;
 }
 
-article {
+/* bloc matching with images */
+.matchingTitle {
+  background-color: tomato;
+}
+
+.matchingSubtitle {
+  background-color: yellow;
+  margin-top: -30px;
+}
+
+.blocMatching {
+  background-color: rosybrown;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 40px;
+}
+
+.blocMatchingSubtitle {
+  background-color: teal;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+.blocMatchingDescription {
+  background-color: red;
   width: 100%;
 }
 
+/* bloc job with link images */
+.job {
+  background-color: steelblue;
+  padding-bottom: 30px;
+}
 
+.jobTitle {
+  margin-top: 40px;
+  padding-bottom: 0;
+}
 
+.jobDescription {
+  margin-top: -30px;
+}
 
+.jobLinks {
+  background-color: seagreen;
+  padding-bottom: 40px;
+}
 
+/* bloc money with a grey background and image when its a desktop interface */
+.money {
+  background-color: violet;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 20px;
+}
 
+.blocMoney {
+  background-color: teal;
+  width: 100%;
+  text-align: justify;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.buttonMoney {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 

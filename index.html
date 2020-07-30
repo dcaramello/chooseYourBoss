@@ -23,169 +23,146 @@
 </head>
 <body>
 
-<!-- header with a burger menu logo and line-->
-  <header>
-<!-- nav in the header -->
-    <nav class="burger">
+<!-- ============================nav================================== -->
+  <nav>
+    <div class="burger">
       <img src="https://img.icons8.com/material/48/000000/menu--v1.png"/>
-    </nav>
+    </div>
     <div class="titleLogo">
       <a href="#"><img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo"></a>
     </div>
+  </nav>
+
+<!-- ============================header================================ -->
+  <header>
+    <div class="container subscribe">
+      <h1 class="fontTitleHeader fontGotham blueText">Le matching parfait est aussi professionnel</h1>
+      <p class="fontTextHeader fontMulish">Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
+      <a class="buttonSubscribe fontMulish" href="#">Je m'inscris</a>
+    </div>
   </header>
 
-<!-- main -->
+<!-- ===========================main=================================== -->
   <main>
-<!-- bloc subscribe     -->
-    <article class="subscribe">
-      <h2>Le matching parfait est aussi professionnel</h2>
-      <p>Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
-      <a class="button" href="#">Je m'inscris</a>
-    </article>
-
-<!-- bloc number     -->
-    <article class="chiffre columnCenter">
-      <section class="columnCenter">
-        <h3>150 000</h3>
-        <span>Candidats</span>
-      </section>
-      <section class="columnCenter">
-        <h3>473 000</h3>
-        <span>Rencontres</span>
-      </section>
-      <section class="columnCenter">
-        <h3>13 300</h3>
-        <span>Recruteurs</span>
-      </section>
-    </article>
-
-<!-- bloc matching -->
-    <article class="matching columnCenter">
-      <div class="columnCenter">
-        <h3>L'algorithme travaille pour toi</h3>
-        <p>Accède à des matchings personnalisés tout en restant protégé et anonyme</p>
-      </div>
-      <section class="columnCenter">
-        <div class="image columnCenter"> 
-          <img src="img/matching1.png" alt="matching1" class="image">
-          <h4>Personnalisation</h4>
-          <p>Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+<!-- bloc chiffre with blue background-->
+    <article class="container chiffre columnCenter">
+      <section class="blueBloc">
+        <div class="columnCenter">
+          <div class="chiffreTitle">150 000</div>
+          <div class="chiffreSubtitle">Candidats</div>
         </div>
-        <div class="image columnCenter">
-          <img src="img/matching2.png" alt="matching2" class="image">
-          <h4>3 en 1</h4>
-          <p>Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement au offres qui te plaisent.</p>
-        </div>
-        <div class="image columnCenter">
-          <img src="img/matching3.png" alt="matching3" class="image">
-          <h4>Anonymat</h4>
-          <p>Ton profil reste protégé et anonyme jusqu'a ta mise en relation avec le recruteur de  ton choix, évitant ainsi toute sur sollicitation.</p>
+        <div class="columnCenter">
+          <div class="chiffreTitle">473 000</div>
+          <div class="chiffreSubtitle">Rencontres</div>
+        </div> 
+        <div class="columnCenter">
+          <div class="chiffreTitle">13 300</div>
+          <div class="chiffreSubtitle">Recruteurs</div>
         </div> 
       </section>
-      <a class="button" href="#">J'accède à mes matchings</a>
     </article>
 
-    <article class="columnCenter">
-      <div>
-        <h3>Tous les jobs informatiques et numériques</h3>
-        <p>Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
+<!-- bloc matching with images-->
+    <article class="matching backgroundLightpink fontMulish">
+      
+      <div class="columnCenter">
+        <h2 class="matchingTitle fontSize36 fontGotham textCenter blueText">L'algorithme travaille pour toi</h2>
+        <h3 class="matchingSubtitle fontSize26 fontMulish textCenter">Accède à des matchings personnalisés tout en restant protégé et anonyme</h3>
       </div>
-      <section>
+
+      <section class="columnCenter blocMatching container">
+      
+        <div class="columnCenter"> 
+          <img src="img/matching1.png" alt="matching1" class="image">
+          <p class="blocMatchingSubtitle blueText fontSize18 fontGotham">Personnalisation</p>
+          <p class="blocMatchingDescription fontSize18 blueText">Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+        </div>
+        <div class="columnCenter">
+          <img src="img/matching2.png" alt="matching2" class="image">
+          <p class="blocMatchingSubtitle blueText fontSize18 fontGotham">3 en 1</h4>
+          <p class="blocMatchingDescription fontSize18 blueText">Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement au offres qui te plaisent.</p>
+        </div>
+        <div class="columnCenter">
+          <img src="img/matching3.png" alt="matching3" class="image">
+          <p class="blocMatchingSubtitle blueText fontSize18 fontGotham">Anonymat</p>
+          <p class="blocMatchingDescription fontSize18 blueText">Ton profil reste protégé et anonyme jusqu'a ta mise en relation avec le recruteur de  ton choix, évitant ainsi toute sur sollicitation.</p>
+        </div> 
+      </section>
+
+      <div class="container textCenter">
+        <a class="button" href="#">J'accède à mes matchings</a>
+      </div>
+      
+    </article>
+
+
+<!-- bloc Job with link     -->
+    <article class="job container columnCenter">
+      <div>
+        <h2 class="fontSize36 blueText fontGotham jobTitle textCenter">Tous les jobs informatiques et numériques</h2>
+        <p class="fontSize26 fontMulish textCenter jobDescription">Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
+      </div>
+
+      <section class="jobLinks">
         <div>
-          <a class="columnCenter" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="logoTech">Tech</a>
+          <a class="blueText columnCenter fontSize18 fontGotham" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="logoTech">Tech</a>
         </div>
         <div>
-          <a class="columnCenter" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" alt="logoProduit">Produit</a>
+          <a class="blueText columnCenter fontSize18 fontGotham" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" alt="logoProduit">Produit</a>
         </div>
         <div>
-          <a class="columnCenter" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" alt="logoMarketing">Marketing</a>
+          <a class="blueText columnCenter fontSize18 fontGotham" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" alt="logoMarketing">Marketing</a>
         </div>
         <div>
-          <a class="columnCenter" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="logoData">Data</a>
+          <a class="blueText columnCenter fontSize18 fontGotham" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="logoData">Data</a>
         </div>
         <div>
-          <a class="columnCenter" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="logoCreation">Création</a>
+          <a class="blueText columnCenter fontSize18 fontGotham" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="logoCreation">Création</a>
         </div>
       </section>
-      <a class="button" href="#">Je découvre les offres</a>
+
+      <div class="container textCenter">
+        <a class="button" href="#">Je découvre les offres</a>
+      </div>
+      
     </article>
     
-    <article>
-      <h3>Mérites-tu un meilleur salaire ?</h3>
-      <h5>Baromètre des salaires IT</h5>
-      <p>Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
-      <a class="button" href="#">Je découvre mon salaire</a>
+
+
+<!-- bloc money with grey background -->
+    <article class="money container">
+
+      <section class="backgroundLightgray">
+
+        <div class="blocMoney">
+          <h2 class="fontGotham fontSize26">Mérites-tu un meilleur salaire ?</h2>
+          <h3>Baromètre des salaires IT</h3>
+          <p class="fontMulish fontSize16">Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
+          
+        </div>
+          <!-- image -->
+        <div>
+
+          <div class="container textCenter buttonMoney">
+            <a class="button fontMulish" href="#">Je découvre mon salaire</a>
+          </div>
+        </div>        
+      </section>
+      
+    
+    
     </article>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </main>
 
-  <!-- <footer>
-    <section>
-      <h5>Offres d'emploi par régions</h5>
-      <ul>
-        <li><a href="#">offres d'emploi Ile de france</a></li>
-        <li><a href="#">offres d'emploi Auvergne Rhône-Alpes</a></li>
-        <li><a href="#">offres d'emploi Occitanie</a></li>
-        <li><a href="#">offres d'emploi PACA</a></li>
-        <li><a href="#">offres d'emploi Hauts-de-France</a></li>
-        <li><a href="#">offres d'emploi Pays de la loire</a></li>
-        <li><a href="#">offres d'emploi Nouvelle-Aquitaine</a></li>
-      </ul>
-    </section>
-    <section>
-      <h5>Offres d'emploi par sociétés</h5>
-      <ul>
-        <li><a href="#">Toutes nos sociétés qui recrutent</a></li>
-      </ul>
-    </section>
-    <h5>Offres d'emploi à la une</h5>
-    <ul>
-      <li><a href="#">Les stages</a></li>
-      <li><a href="#">les startups</a></li>
-      <li><a href="#">Les offres freelances</a></li>
-    </ul>
-    <section>
-      <h5>Offres d'emploi par techno</h5>
-      <ul>
-        <li><a href="#">offres d'emploi Ruby</a></li>
-        <li><a href="#">offres d'emploi PHP</a></li>
-        <li><a href="#">offres d'emploi Java</a></li>
-        <li><a href="#">offres d'emploi C#</a></li>
-        <li><a href="#">offres d'emploi infrastructure</a></li>
-        <li><a href="#">offres d'emploi C/C++</a></li>
-        <li><a href="#">offres d'emploi Android</a></li>
-        <li><a href="#">offres d'emploi iOS</a></li>
-        <li><a href="#">offres d'emploi Javascript</a></li>
-        <li><a href="#">Toutes nos offres par techno</a></li>
-      </ul>
-    </section>
-    <section>
-      <ul>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Engagements</a></li>
-      <li><a href="#">Evènements</a></li>
-      <li><a href="#">Incubateurs</a></li>
-      <li><a href="#">Contact</a></li>
-      </ul>
-    </section>
-    <section>
-      <a href=""></a>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">???</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </section>
-    <nav>
-      <ul>
-        <li><a href="#">API</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Politique de confidentialité</a></li>
-        <li><a href="#">Paramétrer les cookies</a></li>
-        <li><a href="#">ChooseYourBoss 2019</a></li>
-      </ul>
-    </nav>
-  </footer> -->
 
 
 
@@ -193,6 +170,7 @@
 
 
 
+<!-- ================================================================================== -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
