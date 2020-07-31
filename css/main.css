@@ -297,9 +297,7 @@ header .subscribe {
 
 .blocMatching {
   background-color: rosybrown;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 40px;
+
 }
 
 .blocMatchingSubtitle {
@@ -310,9 +308,11 @@ header .subscribe {
 
 .blocMatchingDescription {
   background-color: red;
-  width: 100%;
 }
 
+.pink {
+  background-color: pink;
+}
 /* bloc job with link images */
 .job {
   background-color: steelblue;
@@ -326,6 +326,8 @@ header .subscribe {
 
 .jobDescription {
   margin-top: -30px;
+  padding: 0 40px;
+  margin: 0 0 10px;
 }
 
 .jobLinks {
@@ -349,14 +351,33 @@ header .subscribe {
 
 .buttonMoney {
   margin-top: 20px;
-  
   margin-bottom: 20px;
 }
 /* =============================================== */
 /* ================ MEDIA QUERIES ================ */
 /* =============================================== */
 
+/* bloc matching at 530px */
+@media screen and (min-width: 530px) {
+  .blocImage {
+    width: 200px;
+  }
+  .blocMatching {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .blocMatching3 {
+    width: 80%;
+  }
+  .descriptionMatching3 {
+    width: 100%;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
+ /* bloc matching at 768px */
   .blueBloc{
     padding-left: 0;
     padding-right: 0;
@@ -364,9 +385,22 @@ header .subscribe {
     justify-content: center;
     justify-content: space-around;
   }
-
 }
 
+
+
+@media screen and (min-width: 992px) {
+  .blocMatching {
+    flex-wrap: nowrap;
+  }
+  .blocMatching3{
+    width: 300px;
+  }
+  .blocImage {
+    width: 300px;
+    margin: 0;
+  }
+}
 
 
 
