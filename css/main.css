@@ -225,7 +225,7 @@ body {
                         /* nav */
                         /* === */
 nav {  
-  height: 10vh;
+  height: 8vh;
   position: relative;
   border-bottom: 2px solid gray;
 }
@@ -264,7 +264,7 @@ header .subscribe {
                         /* main */
                         /* ==== */
 
-/* bloc chiffre with number and blue background                         */
+/* bloc chiffre with number and blue background */
 .chiffre {
   background-color: #2b345d;
   color: white;
@@ -349,12 +349,23 @@ header .subscribe {
 
 .buttonMoney {
   margin-top: 20px;
+  
   margin-bottom: 20px;
 }
+/* =============================================== */
+/* ================ MEDIA QUERIES ================ */
+/* =============================================== */
 
+@media screen and (min-width: 768px) {
+  .blueBloc{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
 
-
-
+}
 
 
 
