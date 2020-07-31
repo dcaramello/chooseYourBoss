@@ -314,9 +314,13 @@ header .subscribe {
   background-color: pink;
 }
 /* bloc job with link images */
+
+
 .job {
   background-color: steelblue;
   padding-bottom: 30px;
+  margin-left: 81px;
+  margin-right: 81px;
 }
 
 .jobTitle {
@@ -332,7 +336,9 @@ header .subscribe {
 
 .jobLinks {
   background-color: seagreen;
+  width: 100%;
   padding-bottom: 40px;
+
 }
 
 /* bloc money with a grey background and image when its a desktop interface */
@@ -353,12 +359,24 @@ header .subscribe {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 /* =============================================== */
 /* ================ MEDIA QUERIES ================ */
 /* =============================================== */
 
-/* bloc matching at 530px */
+/* other versions of mobile interface */
+@media screen and (min-width: 430px) {
+  /* bloc job */
+  .jobLinks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
+
 @media screen and (min-width: 530px) {
+  /* bloc matching */
   .blocImage {
     width: 200px;
   }
@@ -375,9 +393,12 @@ header .subscribe {
   }
 }
 
+@media screen and (min-width: 630px) {
+}
 
+/* tablet interface */
 @media screen and (min-width: 768px) {
- /* bloc matching at 768px */
+ /* bloc chiffre*/
   .blueBloc{
     padding-left: 0;
     padding-right: 0;
@@ -385,11 +406,12 @@ header .subscribe {
     justify-content: center;
     justify-content: space-around;
   }
+
+ 
 }
 
-
-
 @media screen and (min-width: 992px) {
+  /* bloc matching */
   .blocMatching {
     flex-wrap: nowrap;
   }
@@ -402,8 +424,9 @@ header .subscribe {
   }
 }
 
-
-
+/* desktop interface */
+@media screen and (min-width: 992px) {
+}
 
 
 
