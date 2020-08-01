@@ -23,31 +23,49 @@
 </head>
 <body>
 
-<!-- ============================nav================================== -->
+<!-- ============================/ nav /================================== -->
+<!-- with a menu burger, link in logo and nav bar hidden for mobile and tablet interface -->
   <nav>
-    <div>
+    <div class="fullnav">
       <div class="burger">
         <img src="https://img.icons8.com/material/48/000000/menu--v1.png"/>
       </div>
       <div class="titleLogo">
         <a href="#"><img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo"></a>
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a class="fontMulish menuNav" href="#">Offres</a></li>
+          <li><a class="fontMulish menuNav" href="#">Entreprises</a></li>
+          <li><a class="fontMulish menuNav" href="#">Salaires</a></li>
+          <li><a class="fontMulish menuNav" href="#">Evènements</a></li>
+          <li><a class="fontMulish menuNav" href="#">Blog</a></li>
+          <li><a class="fontMulish menuNav" href="#">Connexion</a></li>
+          <li><a class="fontMulish button" href="#">Inscription</a></li>
+          <li><a class="fontMulish menuNav" href="#">Vous êtes recruteur</a></li>
+        </ul>
+      </div>
     </div>
-    
   </nav>
 
-<!-- ============================header================================ -->
+<!-- ============================/ header /================================ -->
+<!-- bloc with title and subtitle and image hidden in mobile and tablet interface -->
   <header>
-    <div class="container subscribe">
-      <h1 class="fontTitleHeader fontGotham blueText">Le matching parfait est aussi professionnel</h1>
-      <p class="fontTextHeader fontMulish">Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
-      <a class="buttonSubscribe fontMulish" href="#">Je m'inscris</a>
+    <div class="blocInHeader container">
+      <div class="subscribe">
+        <h1 class="fontTitleHeader fontGotham blueText">Le matching parfait est aussi professionnel</h1>
+        <p class="fontTextHeader fontMulish">Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
+        <a class="buttonSubscribe fontMulish" href="#">Je m'inscris</a>
+      </div>
+      <div class="blocImageHeader">
+        <img class="imageHeader" src="img/man.png" alt="man">
+      </div>
     </div>
   </header>
 
-<!-- ===========================main=================================== -->
+<!-- ===========================/ main /=================================== -->
+<!-- Bloc "chiffre" with a blue background and one artciles -->
   <main>
-<!-- bloc chiffre with blue background-->
     <article class="container chiffre">
       <section class="blueBloc">
         <div class="columnCenter">
@@ -65,48 +83,42 @@
       </section>
     </article>
 
-<!-- bloc matching with images-->
-    <article class="container matching backgroundLightpink fontMulish">
-      
+
+<!-- bloc "matching" with one article and images in section, it moves at different interfaces -->
+    <article class="container matching fontMulish">
       <div class="columnCenter">
-        <h2 class="matchingTitle fontSize36 fontGotham textCenter blueText">L'algorithme travaille pour toi</h2>
+        <h2 class="fontSize36 fontGotham textCenter blueText">L'algorithme travaille pour toi</h2>
         <h3 class="matchingSubtitle fontSize26 fontMulish textCenter">Accède à des matchings personnalisés tout en restant protégé et anonyme</h3>
       </div>
-
-      <section class="blocMatching container">
-      
-        <div class="blocImage columnCenter container blocMatching12 pink"> 
+      <section class="blocMatching container">    
+        <div class="blocImage columnCenter container blocMatching12"> 
           <img src="img/matching1.png" alt="matching1" class="image">
           <p class="blocMatchingSubtitle blueText fontSize18 fontGotham">Personnalisation</p>
-          <p class="blocMatchingDescription fontSize18 blueText">Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+          <p class="fontSize18 blueText">Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
         </div>
-        <div class="blocImage columnCenter container blocMatching12 pink">
+        <div class="blocImage columnCenter container blocMatching12">
           <img src="img/matching2.png" alt="matching2" class="image">
           <p class="blocMatchingSubtitle blueText fontSize18 fontGotham">3 en 1</h4>
-          <p class="blocMatchingDescription fontSize18 blueText">Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement au offres qui te plaisent.</p>
+          <p class="fontSize18 blueText">Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement au offres qui te plaisent.</p>
         </div>
-        <div class="blocImage columnCenter container blocMatching3 pink">
+        <div class="blocImage columnCenter container blocMatching3">
           <img src="img/matching3.png" alt="matching3" class="image">
           <p class="blocMatchingSubtitle blueText fontSize18 fontGotham">Anonymat</p>
-          <p class="blocMatchingDescription fontSize18 blueText descriptionMatching3">Ton profil reste protégé et anonyme jusqu'a ta mise en relation avec le recruteur de  ton choix, évitant ainsi toute sur sollicitation.</p>
+          <p class="fontSize18 blueText descriptionMatching3">Ton profil reste protégé et anonyme jusqu'a ta mise en relation avec le recruteur de  ton choix, évitant ainsi toute sur sollicitation.</p>
         </div> 
-
       </section>
-
       <div class="container textCenter">
         <a class="button" href="#">J'accède à mes matchings</a>
       </div>
-      
     </article>
 
 
-<!-- bloc Job with link     -->
+<!-- bloc "Job" with five links in images in one article, it moves at different interfaces -->
     <article class="jobTitle container columnCenter">
       <div>
         <h2 class="fontSize36 blueText fontGotham jobTitle textCenter">Tous les jobs informatiques et numériques</h2>
         <p class="fontSize26 fontMulish textCenter jobDescription">Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
       </div>
-
       <section class="job">
         <div class="jobLinks">
           <div>
@@ -124,57 +136,27 @@
           <div>
             <a class="blueText columnCenter fontSize18 fontGotham" href="#"><img class="imageLink" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="logoCreation">Création</a>
           </div>
-        </div>
-        
+        </div>  
       </section>
-
       <div class="container textCenter">
         <a class="button" href="#">Je découvre les offres</a>
-      </div>
-      
+      </div> 
     </article>
     
 
-
-<!-- bloc money with grey background -->
-    <article class="money">
-
-      <section class="backgroundLightgray">
-
-  
-
-          <div  class="blocMoney">
-            <h2 class="fontGotham fontSize26">Mérites-tu un meilleur salaire ?</h2>
-            <h3>Baromètre des salaires IT</h3>
-            <p class="fontMulish fontSize16">Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
-            <a class="button fontMulish textCenter buttonMoney" href="#">Je découvre mon salaire</a>
-          </div>
-
-          </div>
-          <!-- image -->
-          <div>
- 
-        
-      
+<!-- bloc "money" with a grey background and text, one image is hidden for mobile and tablet interface -->
+    <article>
+      <section class="money backgroundLightgray">
+        <div  class="blocTextMoney blueText">
+          <h2 class="blocTextMoney fontGotham fontSize26">Mérites-tu un meilleur salaire ?</h2>
+          <h3>Baromètre des salaires IT</h3>
+          <p class="fontMulish fontSize16">Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
+          <a class="button fontMulish textCenter buttonMoney" href="#">Je découvre mon salaire</a>
+        </div>
+        <img class="imageMoney" src="img/salaire.svg" alt="salaire">
       </section>
-      
     </article>
-  
-  
-  
-  
-  
-  
-  
-  
-  
   </main>
-
-
-
-
-
-
 
 
 <!-- ================================================================================== -->

@@ -83,19 +83,6 @@ textarea {
   resize: vertical;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -210,20 +197,22 @@ body {
 .blueText {
   color: #162049;
 }
-/* ////////////////////////////////////////// */
-
-
 
 
 /* =============================================================== */
 
 
-                        /* nav */
-                        /* === */
+/* ------------------ nav_--------------------- */
+/* -------------------------------------------- */
 nav {  
-  height: 8vh;
+  height: 70px;
   position: relative;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid rgba(183,178,199,.3);
+}
+
+.navbar {
+  display: none;
+  
 }
 
 .burger {
@@ -243,22 +232,28 @@ nav {
   width: 80%;
 }
 
-                        /* header */
-                        /* ====== */
-.subscribe h2 {
+/* ------------------- header ------------------ */
+/* --------------------------------------------- */
+.imageHeader {
+  display: none;
+}
+
+.subscribe h1 {
   font-size: 3em;
+  margin-bottom: -30px;
 }
 
 .subscribe p {
   font-size: 1.7em;
+
 }
 
 header .subscribe {
   padding-bottom: 6em;
 }
 
-                        /* main */
-                        /* ==== */
+/* -------------------- main -------------------- */
+/* ---------------------------------------------- */
 
 /* bloc chiffre with number and blue background */
 .chiffre {
@@ -281,39 +276,23 @@ header .subscribe {
   padding: 40px 20px;
 }
 
+/* ------- */
 /* bloc matching with images */
-.matchingTitle {
-  background-color: tomato;
+.matching {
+  background-color: rgba(179,161,237,.2);
 }
-
 .matchingSubtitle {
-  background-color: yellow;
   margin-top: -30px;
 }
 
-.blocMatching {
-  background-color: rosybrown;
-
-}
-
 .blocMatchingSubtitle {
-  background-color: teal;
   margin-top: 20px;
   padding: 0 40px;
 }
 
-.blocMatchingDescription {
-  background-color: red;
-}
-
-.pink {
-  background-color: pink;
-}
+/* ------ */
 /* bloc job with link images */
-
-
 .job {
-  background-color: steelblue;
   padding-bottom: 30px;
   margin-left: 81px;
   margin-right: 81px;
@@ -331,15 +310,17 @@ header .subscribe {
 }
 
 .jobLinks {
-  background-color: seagreen;
   width: 100%;
   padding-bottom: 40px;
 
 }
 
+/* ------ */
 /* bloc money with a grey background and image when its a desktop interface */
  
-
+.imageMoney {
+  display: none;
+}
 
 .backgroundLightgray {
   background-color: #e5e6e4;
@@ -350,14 +331,12 @@ header .subscribe {
 }
 
 .money {
-  background-color: violet;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.blocMoney {
-  background-color: teal;
+.blocTextMoney {
   text-align: justify;
   padding-bottom: 20px;
 }
@@ -367,11 +346,14 @@ header .subscribe {
   margin-bottom: 20px;
 }
 
-/* =============================================== */
-/* ================ MEDIA QUERIES ================ */
-/* =============================================== */
 
-/* other versions of mobile interface */
+/* ==================================================== */
+/* ================== MEDIA QUERIES =================== */
+/* ==================================================== */
+
+/* ---------------------------------- */
+/* other versions of mobile interface or little tablet */
+/* ---------------------------------- */
 @media screen and (min-width: 430px) {
   /* bloc job */
   .jobLinks{
@@ -379,9 +361,9 @@ header .subscribe {
     justify-content: center;
     flex-wrap: wrap;
   }
-
 }
-/* //////////////////////////////////////////////// */
+
+/* ------------------------------------*/
 @media screen and (min-width: 530px) {
   /* bloc matching */
   .blocImage {
@@ -400,13 +382,9 @@ header .subscribe {
   }
 }
 
-@media screen and (min-width: 630px) {
-}
-
-
-
-/* //////////////////////////////////////////////// */
-/* tablet interface */
+/* --------------------------------------*/
+/*          tablet interface */
+/* ------------------------------------- */
 @media screen and (min-width: 768px) {
  /* bloc chiffre*/
   .blueBloc{
@@ -418,20 +396,15 @@ header .subscribe {
   }
 
   /* bloc money */
-  .money {
-    
-  }
-
   .backgroundLightgray {
     background-color: #e5e6e4;
     width: 600px;
     margin-top: 50px;
     padding: 20px;
   }
-
- 
 }
-/* //////////////////////////////////////////////// */
+
+/* ----other interface fo tablet---- */
 @media screen and (min-width: 992px) {
   /* bloc matching */
   .blocMatching {
@@ -445,10 +418,73 @@ header .subscribe {
     margin: 0;
   }
 }
-/* //////////////////////////////////////////////// */
-/* desktop interface */
-@media screen and (min-width: 992px) {
+
+/* --------------------------------------- */
+/*            desktop interface */
+/* --------------------------------------- */
+@media screen and (min-width: 1000px) {
+ /* bloc money */
+ .imageMoney {
+  display: flex;
 }
+.money {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  height: 300px;
+}
+.blocTextMoney {
+  width: 420px
+}
+
+/* ----desktop interface full---- */
+@media screen and (min-width: 1200px) {
+  /* nav */
+  .navbar{
+    display: flex;
+    justify-content: end;
+  }
+  .burger {
+    display: none;
+  }
+  .titleLogo {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+    margin-right: -5px;
+  }
+  .navbar ul li {
+    list-style: none;
+    margin: 20px;
+  }
+  .menuNav {
+    color: black;
+    font-size: 17px;
+  }
+  
+  /* blocInHeader */
+  .imageHeader{
+    display: flex;
+    width: 550px;
+  }
+  .blocInHeader {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 70%;
+    padding-left: 15%;
+    margin: 60px;
+  }
+  .subscribe {
+    margin-right: 60px;
+  }
+} 
 
 
 
