@@ -86,6 +86,405 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a {
+text-decoration: none;
+}
+        
+body {
+  background-image: url(https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png);
+}
+/* //////////////////////// */
+
+/* font fo website */
+@font-face {
+  font-family: "Gotham";
+    src:url("Gotham\ Black\ Regular.ttf");      
+}
+
+@font-face {
+  font-family: "mulish";
+    src:url("Mulish-VariableFont_wght.ttf");      
+}
+/* ================================================ */
+ /* utility classes */
+/*=================*/
+
+.buttonSubscribe {
+  background-color: #4d22ff;
+  border-radius: 24px;
+  border: none;
+  height: 5px;
+  font-size: 1.7em;
+  color: white;
+  padding: 5px 25px;
+}
+
+.button {
+  background-color: #4d22ff;
+  border-radius: 24px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px 25px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.backgroundLightpink {
+  background-color: #d8dcff;
+}
+
+.image {
+  width: 250px;
+}
+
+.imageLink {
+  width: 200px;
+}
+
+.logoLink {
+  width: 100%;
+}
+
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.fontTitleHeader {
+  font-size: 46px;
+  
+}
+
+.fontTextHeader {
+  color: #212121;
+  font-size: 26px;
+}
+
+.fontMulish {
+  font-family: "mulish", Arial, Helvetica, sans-serif;
+}
+
+.fontGotham {
+  font-family: "gotham", Arial, Helvetica, sans-serif;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.fontSize18 {
+  font-size: 18px;
+}
+
+.fontSize36 {
+  font-size: 36px;
+}
+
+.fontSize26 {
+  font-size: 26px;
+}
+
+.blueText {
+  color: #162049;
+}
+
+
+/* =============================================================== */
+
+
+/* ------------------ nav_--------------------- */
+/* -------------------------------------------- */
+nav {  
+  height: 70px;
+  position: relative;
+  border-bottom: 2px solid rgba(183,178,199,.3);
+}
+
+.navbar {
+  display: none;
+  
+}
+
+.burger {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.titleLogo {
+  padding-top: 0.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.titleLogo img {
+  width: 80%;
+}
+
+/* ------------------- header ------------------ */
+/* --------------------------------------------- */
+.imageHeader {
+  display: none;
+}
+
+.subscribe h1 {
+  font-size: 3em;
+  margin-bottom: -30px;
+}
+
+.subscribe p {
+  font-size: 1.7em;
+
+}
+
+header .subscribe {
+  padding-bottom: 6em;
+}
+
+/* -------------------- main -------------------- */
+/* ---------------------------------------------- */
+
+/* bloc chiffre with number and blue background */
+.chiffre {
+  background-color: #2b345d;
+  color: white;
+}
+
+.chiffreTitle {
+  font-family: "gotham", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+}
+
+.chiffreSubtitle {
+  font-family: "gotham", Arial, Helvetica, sans-serif;
+  color: #2fd;
+  font-size: 20px;
+}
+
+.blueBloc {
+  padding: 40px 20px;
+}
+
+/* ------- */
+/* bloc matching with images */
+.matching {
+  background-color: rgba(179,161,237,.2);
+}
+.matchingSubtitle {
+  margin-top: -30px;
+}
+
+.blocMatchingSubtitle {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+/* ------ */
+/* bloc job with link images */
+.job {
+  padding-bottom: 30px;
+  margin-left: 81px;
+  margin-right: 81px;
+}
+
+.jobTitle {
+  margin-top: 40px;
+  padding-bottom: 0;
+}
+
+.jobDescription {
+  margin-top: -30px;
+  padding: 0 40px;
+  margin: 0 0 10px;
+}
+
+.jobLinks {
+  width: 100%;
+  padding-bottom: 40px;
+
+}
+
+/* ------ */
+/* bloc money with a grey background and image when its a desktop interface */
+ 
+.imageMoney {
+  display: none;
+}
+
+.backgroundLightgray {
+  background-color: #e5e6e4;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+}
+
+.money {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blocTextMoney {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.buttonMoney {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* ==================================================== */
+/* ================== MEDIA QUERIES =================== */
+/* ==================================================== */
+
+/* ---------------------------------- */
+/* other versions of mobile interface or little tablet */
+/* ---------------------------------- */
+@media screen and (min-width: 430px) {
+  /* bloc job */
+  .jobLinks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* ------------------------------------*/
+@media screen and (min-width: 530px) {
+  /* bloc matching */
+  .blocImage {
+    width: 200px;
+  }
+  .blocMatching {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .blocMatching3 {
+    width: 80%;
+  }
+  .descriptionMatching3 {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------*/
+/*          tablet interface */
+/* ------------------------------------- */
+@media screen and (min-width: 768px) {
+ /* bloc chiffre*/
+  .blueBloc{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+  /* bloc money */
+  .backgroundLightgray {
+    background-color: #e5e6e4;
+    width: 600px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+}
+
+/* ----other interface fo tablet---- */
+@media screen and (min-width: 992px) {
+  /* bloc matching */
+  .blocMatching {
+    flex-wrap: nowrap;
+  }
+  .blocMatching3{
+    width: 300px;
+  }
+  .blocImage {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+/* --------------------------------------- */
+/*            desktop interface */
+/* --------------------------------------- */
+@media screen and (min-width: 1000px) {
+ /* bloc money */
+ .imageMoney {
+  display: flex;
+}
+.money {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  height: 300px;
+}
+.blocTextMoney {
+  width: 420px
+}
+
+/* ----desktop interface full---- */
+@media screen and (min-width: 1200px) {
+  /* nav */
+  .navbar{
+    display: flex;
+    justify-content: end;
+  }
+  .burger {
+    display: none;
+  }
+  .titleLogo {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+    margin-right: -5px;
+  }
+  .navbar ul li {
+    list-style: none;
+    margin: 20px;
+  }
+  .menuNav {
+    color: black;
+    font-size: 17px;
+  }
+  
+  /* blocInHeader */
+  .imageHeader{
+    display: flex;
+    width: 550px;
+  }
+  .blocInHeader {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 70%;
+    padding-left: 15%;
+    margin: 60px;
+  }
+  .subscribe {
+    margin-right: 60px;
+  }
+} 
 
 /* ==========================================================================
    Helper classes
